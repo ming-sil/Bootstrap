@@ -38,10 +38,85 @@
         padding: 0;
         text-decoration: none;
       }
+
+      .up {
+        background-color: #500778;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .up > a:first-child {
+        margin-left: auto;
+      }
+      .up > a,
+      .up > span {
+        color: white;
+        margin-right: 10px;
+      }
+      .up > a:last-child {
+        margin-right: 20px;
+      }
+
+      .down {
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .down > img {
+        width: 130px;
+        margin-left: 20px;
+      }
+      .down > a {
+        margin-left: 80px;
+        font-weight: 900;
+        color: #1d1d1d;
+      }
+      .down > form {
+        margin-left: 80px;
+        margin-right: auto;
+        width: 30%;
+      }
+      .icons {
+        font-size: 24px;
+      }
+      .icons > i {
+        margin-right: 20px;
+      }
     </style>
   </head>
   <body>
-    <div class="gnb">네비 바(부트스트랩 아이콘)</div>
+    <div class="gnb">
+      <div class="up">
+        <a href="#">Climate Goals</a>
+        <a href="#">푸른 심장</a>
+        <a href="#">Worn Wear</a>
+        <span>|</span>
+        <a href="#">더보기</a>
+      </div>
+      <div class="down">
+        <img
+          src="https://media-sparta.s3.ap-northeast-2.amazonaws.com/media/images/patagonia_main_logo.png"
+          alt="patagonia logo"
+        />
+        <a href="#">SHOP</a>
+        <a href="#">INSIDE PATAGONIA</a>
+        <form class="d-flex">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+        </form>
+        <div class="icons">
+          <i class="bi bi-question-circle-fill"></i>
+          <i class="bi bi-person-fill"></i>
+          <i class="bi bi-cart-fill"></i>
+        </div>
+      </div>
+    </div>
     <div class="main">메인 사진</div>
     <div class="items">상품(목록그룹/카드/드롭다운)들어갈 곳</div>
   </body>
